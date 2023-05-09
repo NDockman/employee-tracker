@@ -70,11 +70,19 @@ function chooseDept(){
 }
 
 function viewAllDept(){
-
+    dbqueries.viewAllDept()
+    .then(([rows]) => {
+        let dept = rows
+        console.table(dept)
+    })
 }
 
 function viewAllRoles(){
-
+    dbqueries.viewAllRoles()
+    .then(([rows]) => {
+        let roles = rows
+        console.table(roles)
+    })
 }
 
 function viewAllEmployees(){
