@@ -1,4 +1,4 @@
-
+USE employee_tracker;
 INSERT INTO department (name)
 VALUES
 ("Human Resources"),
@@ -17,9 +17,9 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-("Steve", "Johnson", 4, 1),
-("Abe", "Lincoln", 1, 2),
-("Will", "Smith", 5, 3),
-("Sam", "Maxwell", 2, 4),
+("Steve", "Johnson", 4, null),
+("Abe", "Lincoln", 1, null),
+("Will", "Smith", 5, null),
+("Sam", "Maxwell", 2, null),
 ("Jane", "Doe", 6, 3),
 ("Louis", "Green", 3, 1);
